@@ -18,23 +18,26 @@
             <section class="item-desciption">
                 Cazuela de pollo
             </section>
-            <section class="item-desciption">
+            <section>
                 <input type="text" id="cantidad" placeholder="Cantidad">
             </section>
             <section class="item-desciption">
                 <input type="text" id="color" placeholder="Color">
             </section>
             <section class="item-desciption">
-                Valor: 5990 CLP
+                <select name="Previos" id="prices" multiple>
+                    <option value="la-florida">5990</option>
+                    <option value="nunoa">6990</option>
+                    <option value="providencia">7990</option>
+                    <option value="las-condes">9990</option>
+                </select>
             </section>
             <section>
-                <button id="boton" type="submit">Calcular Total</button>
+                <button id="btn-calc" type="submit">Calcular Total</button>
             </section>
         </section>
         <section class="card-format2">
-           <div class="div1"></div> 
-           <div class="div1"></div> 
-
+            <div id="result"></div>
         </section>
     </form>
     <script src="assets/js/app.js"></script>
