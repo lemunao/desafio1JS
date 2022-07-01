@@ -19,17 +19,27 @@
                 Cazuela de pollo
             </section>
             <section>
-                <input type="text" id="cantidad" placeholder="Cantidad">
+                <input type="text" id="cantidad" placeholder="Cantidad" required pattern="[0-9]{1,2}" title="Favor ingrese solo número, máximo pedidos 99">
             </section>
             <section class="item-desciption">
-                <input type="text" id="color" placeholder="Color">
+                <p>
+                    Elije el color de tus platos!
+                </p>
             </section>
             <section class="item-desciption">
-                <select name="Previos" id="prices" multiple>
-                    <option value="la-florida">5990</option>
-                    <option value="nunoa">6990</option>
-                    <option value="providencia">7990</option>
-                    <option value="las-condes">9990</option>
+                <input type="color" id="color-style" placeholder="Color">
+            </section>
+            <section class="item-desciption">
+                <p>
+                    Consulte los precios a domicilio!!
+                </p>
+            </section>
+            <section class="item-desciption">                
+                <select name="Precios" id="comuna" multiple required>
+                    <option value="2990">La florida</option>
+                    <option value="3990">Ñuñoa</option>
+                    <option value="4990">Providencia</option>
+                    <option value="5990">Las condes</option>
                 </select>
             </section>
             <section>
@@ -38,6 +48,7 @@
         </section>
         <section class="card-format2">
             <div id="result"></div>
+            <div id="circle-color" class="format-color"></div>
         </section>
     </form>
     <script src="assets/js/app.js"></script>
