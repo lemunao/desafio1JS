@@ -7,5 +7,5 @@ document.querySelector("form").addEventListener("submit", (e) => {
     let color = document.getElementById('color-style').value
     cssColor = document.getElementById('circle-color');
     cssColor.style.background = color;
-    document.getElementById("circle-color").innerHTML = cssColor
+    document.getElementById("circle-color").innerHTML += `<li>Elije el color de tus platos!!! :  ${color-style}</li>`
 })
